@@ -1,6 +1,6 @@
 const Footer = () => {
     return ( 
-        <footer className="copyright">
+        <footer className="copyright"   data-aos="fade-buttom">
         <div href="#" className="back-to-top">
           <a href="#"
             ><i className="fas fa-chevron-up"></i

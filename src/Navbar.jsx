@@ -3,6 +3,8 @@ import { Component } from "react";
 import { render } from "react-dom";
 
 class Navbar extends Component  {
+
+  
 state={ clicked: false };
   handleClick = () =>{
     this.setState({clicked: !this.state.clicked})

@@ -1,14 +1,22 @@
+import React, {useEffect} from "react";
+import Aos from 'aos'
+import "aos/dist/aos.css"
+
+
 import img1 from "./image/run3.gif";
 import img2 from "./image/website.gif";
 import img3 from "./image/run1.gif";
 import img4 from "./image/run2.gif";
 
 const Section2 = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000});
+ }, []);
   return (
     <>
       <section className="about-me" id="about">
         <div className="container">
-          <div className="about-me-container">
+          <div className="about-me-container"  data-aos="fade-up">
             <div className="about-me-img">
               <img src={img4} alt="Ladipo Matthew" />
             </div>
@@ -41,12 +49,12 @@ const Section2 = () => {
           </div>
         </div>
       </section>
-      <div href="#Services" className="Services">
+      <div href="#Services" className="Services"  data-aos="fade-up">
           Services
         </div>
       <div className="work" id="Services">
        
-        <div className="testimotionals">
+        <div className="testimotionals"  data-aos="fade-up">
           <div className="card">
             <div className="layer"></div>
             <div className="content">
@@ -66,7 +74,7 @@ const Section2 = () => {
           </div>
         </div>
 
-        <div className="testimotionals">
+        <div className="testimotionals"  data-aos="fade-up">
           <div className="card">
             <div className="layer"></div>
             <div className="content">
@@ -86,7 +94,7 @@ const Section2 = () => {
           </div>
         </div>
 
-        <div className="testimotionals">
+        <div className="testimotionals"  data-aos="fade-up">
           <div className="card">
             <div className="layer"></div>
             <div className="content">
@@ -107,7 +115,7 @@ const Section2 = () => {
         </div>
       </div>
 
-      <section className="contact" id="contact">
+      <section className="contact" id="contact"  data-aos="fade-up">
         <div className="container">
           <div className="contact-container">
             <div className="contact-heading">

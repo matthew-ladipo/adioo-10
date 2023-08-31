@@ -1,8 +1,16 @@
+import React, {useEffect} from "react";
+import Aos from 'aos'
+import "aos/dist/aos.css"
+
+
 const Section = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000});
+ }, []);
     return ( 
       <>
     <div className="intro">
-      <div className="container">
+      <div className="container"  data-aos="fade-up">
         <h1>Hello am Ladipo <span>matthew</span></h1>
         <h3 className="text">
           A software developer with proficient skill in web development and
