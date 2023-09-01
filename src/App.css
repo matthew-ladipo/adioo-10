@@ -10,14 +10,11 @@
   --color-yellow: #f3d250;
 }
 
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
 }
-
-
 
 body {
   font-family: var(--body-font);
@@ -36,9 +33,10 @@ header {
   z-index: 6;
   background-image: linear-gradient(
     rgba(57, 18, 65, 0.836),
-    rgba(41, 1, 36, 0.87));
+    rgba(41, 1, 36, 0.87)
+  );
 }
-.text{
+.text {
   color: #e2c2f5;
   font-size: 25px;
 }
@@ -48,7 +46,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
 }
 
 #nav-list {
@@ -59,7 +56,6 @@ header {
   justify-content: space-around;
   align-items: center;
   margin-left: auto;
-
 }
 
 .nav-link {
@@ -68,11 +64,10 @@ header {
   position: relative;
   font-size: 20px;
   font-weight: bold;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   transition: 0.3s ease;
-
 }
-.logo{
+.logo {
   color: rgb(240, 164, 236);
   text-decoration: none;
   text-transform: uppercase;
@@ -80,9 +75,9 @@ header {
   font-size: 25px;
   font-weight: bold;
   padding-left: 2rem;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-span{
+span {
   color: #ee6262;
 }
 .hamburger {
@@ -111,12 +106,15 @@ span{
 .intro {
   padding: 10rem 0;
   overflow: hidden;
-  background-image: linear-gradient(rgba(120, 6, 143, 0.8),rgba(117, 9, 60, 0.8)),url('./image/code.jpg');
+  background-image: linear-gradient(
+      rgba(120, 6, 143, 0.8),
+      rgba(117, 9, 60, 0.8)
+    ),
+    url("./image/code.jpg");
   height: 50vh;
 }
 
 .container {
- 
   max-width: 122.5rem;
   margin: 0 auto;
   padding: 0 5rem;
@@ -161,7 +159,7 @@ h1 {
   position: relative;
   z-index: 5;
   width: 100%;
-  height: 80vh;
+  height: 75vh;
   display: flex;
   align-items: center;
   clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
@@ -242,16 +240,11 @@ h1 {
 /* services page */
 .work {
   background-color: #e0aaf5;
-  border-radius: 30px;
-  margin-top: 9rem;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-
+  border-radius: 20px;
+  margin-top: 8rem;
 }
 .Services {
   font-size: 45px;
-  margin-top: 7rem;
   position: relative;
   color: rgb(182, 13, 83);
   text-align: center;
@@ -267,56 +260,45 @@ h1 {
   left: 50%;
   transform: translateX(-50%);
 }
-
+.testi {
+  display: flex;
+}
 .testimotionals {
-  width: 300px;
-  margin-left: 20px;
+  width: 350px;
+  margin-left: 7rem;
   margin-top: 50px;
-  margin-bottom: 70px;
-  align-items: center;
-
+  border-radius: 20px;
 }
 .testimotionals .card {
+  border-radius: 20px;
+  background: #d08af8;
   position: relative;
-  overflow: hidden;
-  width: 280px;
-  margin: 0 auto;
-  background: #4f1492;
-  padding: 20px;
-  box-sizing: border-box;
-  text-align: center;
-  box-shadow: 0 10px 40px rgba(138, 22, 158, 0.5);
-  border-radius: 10px;
-}
-
-.testimotionals .card .layer {
-  z-index: 1;
-  position: absolute;
-  top: calc(100% - 2px);
-  height: 100%;
-  width: 100%;
-  left: 0;
-  background: linear-gradient(to left, rgb(223, 194, 240), rgb(197, 214, 236));
-  transition: 0.5s;
+  padding: 3.5rem;
+  justify-content: center;
+  border: 2px solid #0a178b;
+  transition: 0.5s ease-out;
+  overflow: visible;
+  box-shadow: 0 4px 18px 0 rgba(49, 2, 53, 0.25);
+  margin-top: 1rem;
 }
 
 .testimotionals .card .content {
   z-index: 2;
   position: relative;
-}
-
-.testimotionals .card:hover .layer {
-  top: 0;
+  color: black;
+  height: 100%;
+  gap: 0.5em;
+  display: grid;
+  place-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .testimotionals .card .content p {
   font-size: 14px;
   line-height: 24px;
-  color: #fff;
-  font-weight: bold;
-}
-.testimotionals .card .content p:hover{
-  color: #000000;
+  color: #0e0101;
+  font-weight: bolder;
 }
 .testimotionals .card .content .image {
   width: 100px;
@@ -330,12 +312,12 @@ h1 {
 
 .testimotionals .card .content .details a {
   font-size: 9px;
-  color: white;
-  font-weight: bold;
+  color: rgb(7, 6, 6);
+  font-weight: bolder;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-top: 5px;
+  margin-top: 2rem;
   border: 1px solid #fff;
   position: relative;
   padding: 1rem 2rem;
@@ -343,10 +325,11 @@ h1 {
 }
 
 .testimotionals .card:hover .content .details a {
-  color: white;
+  color: rgb(10, 5, 5);
   position: relative;
   color: var(--main-font-color);
 }
+
 /* contact us */
 h1 .title {
   font-size: 40px;
@@ -496,30 +479,15 @@ footer .social-media ul {
   }
 }
 
-
 /* media queries */
 
-
-  .testi {
-    grid-template-columns: 1fr;
-    place-items: center;
-  }
-
-
-  @media screen and (max-width: 905px){
-    .about-me-container{
-      display: grid;
-    }
-  }
-
-@media screen and (max-width: 850px){
-  .work{
+@media screen and (max-width: 905px) {
+  .about-me-container {
     display: grid;
   }
 }
 
-
-@media screen and (max-width: 762px) {
+@media screen and (max-width: 760px) {
   html {
     font-size: 50%;
   }
@@ -529,13 +497,13 @@ footer .social-media ul {
   .container {
     padding: 0 2rem;
   }
-  .work{
+
+  .testi {
     display: grid;
     justify-content: center;
+    margin-right: 5rem;
   }
-  .testimotionals{
-      
-  }
+
   /* NAVIGATION */
 
   .nav {
@@ -564,22 +532,21 @@ footer .social-media ul {
     height: 100%;
     width: 80%;
     flex-direction: column;
-    right: -500px;
+    right: -583px;
     transition: all 1s ease-out;
     pointer-events: none;
     color: #fff;
   }
-  
+
   #nav-list.active {
-   right: -100px;
-   pointer-events: all;
-   
+    right: -100px;
+    pointer-events: all;
   }
   .nav-item {
     opacity: 5;
     margin-top: 20px;
     padding-right: 55px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
   }
   #nav-list li:nth-child(1) {
     transition: all 0.5s ease 0.2s;
@@ -593,14 +560,13 @@ footer .social-media ul {
   #nav-list li:nth-child(4) {
     transition: all 0.5s ease 0.8s;
   }
-.nav-item.active {
+  .nav-item.active {
     opacity: 1;
   }
-  
 }
 
 @media screen and (max-width: 800px) {
-  .nav-item{
+  .nav-item {
     text-decoration: none;
     font-size: 15%;
   }
