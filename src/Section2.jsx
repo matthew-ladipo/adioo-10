@@ -1,7 +1,6 @@
-import React, {useEffect} from "react";
-import Aos from 'aos'
-import "aos/dist/aos.css"
-
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import img1 from "./image/run3.gif";
 import img2 from "./image/website.gif";
@@ -10,13 +9,13 @@ import img4 from "./image/run2.gif";
 
 const Section2 = () => {
   useEffect(() => {
-    Aos.init({ duration: 1000});
- }, []);
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <>
       <section className="about-me" id="about">
         <div className="container">
-          <div className="about-me-container"  data-aos="fade-up">
+          <div className="about-me-container" data-aos="fade-up">
             <div className="about-me-img">
               <img src={img4} alt="Ladipo Matthew" />
             </div>
@@ -36,7 +35,7 @@ const Section2 = () => {
                 <ul>
                   <li>
                     <a
-                      href="file:///C:/Users/hp/.vscode/profile.html"
+                      href="https://docs.google.com/file/d/1TXrD9irdRJI4rXoCuQ2MX8VzzPCEGnSZ/edit?usp=docslist_api&filetype=msword"
                       target="_blank"
                       className="btn grid-btn"
                     >
@@ -49,73 +48,66 @@ const Section2 = () => {
           </div>
         </div>
       </section>
-      <div href="#Services" className="Services"  data-aos="fade-up">
-          Services
-        </div>
+      <div href="#" className="Services" data-aos="fade-up">
+        Services
+      </div>
       <div className="work" id="Services">
-       
-        <div className="testimotionals"  data-aos="fade-up">
-          <div className="card">
-            <div className="layer"></div>
-            <div className="content">
-              <p>
-                Social media Dashboard with theme switcher (light/dark).This is
-                a front-end mentor challenge. the goal was to recreate a given
-                design and get it looking as close to the design as possible.I
-                used this challeng to improve my css skills (CSS Grid)
-              </p>
-              <div className="image">
-                <img width="100px" src={img1} alt="" />
-              </div>
-              <div className="details">
-                <a href="#">social-media Dashboard</a>
+        <div className="testi">
+          <div className="testimotionals">
+            <div className="card" data-aos="fade-up">
+              <div className="content">
+                <p>
+                  Social media Dashboard with theme switcher (light/dark).This
+                  is a front-end mentor challenge.
+                </p>
+                <div className="image">
+                  <img src={img1} alt="" />
+                </div>
+                <div className="details">
+                  <a href="#">e-commerce Dashboard</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div className="testimotionals"  data-aos="fade-up">
-          <div className="card">
-            <div className="layer"></div>
-            <div className="content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-                iusto ea tenetur quas facere minima obcaecati mollitia sed ipsum
-                quod, eius repellat nihil quos. Saepe ipsa veritatis magni
-                voluptates voluptatum.
-              </p>
-              <div className="image">
-                <img width="100px" src={img2} alt="" />
-              </div>
-              <div className="details">
-                <a href="#"> Business Website</a>
+          <div className="testimotionals">
+            <div className="card" data-aos="fade-up">
+              <div className="content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                  iusto ea tenetur
+                </p>
+
+                <div className="image">
+                  <img src={img2} alt="" />
+                </div>
+                <div className="details">
+                  <a href="#"> Business Website</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div className="testimotionals"  data-aos="fade-up">
-          <div className="card">
-            <div className="layer"></div>
-            <div className="content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-                iusto ea tenetur quas facere minima obcaecati mollitia sed ipsum
-                quod, eius repellat nihil quos. Saepe ipsa veritatis magni
-                voluptates voluptatum.
-              </p>
-              <div className="image">
-                <img width="140px" src={img3} alt="" />
-              </div>
-              <div className="details">
-                <a href="#"> Various landing page</a>
+          <div className="testimotionals">
+            <div className="card" data-aos="fade-up">
+              <div className="content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                  iusto ea tenetu
+                </p>
+                <div className="image">
+                  <img src={img3} alt="" />
+                </div>
+                <div className="details">
+                  <a href="#"> Various landing page</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <section className="contact" id="contact"  data-aos="fade-up">
+      <section className="contact" id="contact" data-aos="fade-up">
         <div className="container">
           <div className="contact-container">
             <div className="contact-heading">
